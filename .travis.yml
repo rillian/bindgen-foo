@@ -1,5 +1,12 @@
 language: c++
 
-compiler: clang
-
 script: make check
+
+addons:
+  apt:
+    packages:
+      - g++-5
+      - gcc-5
+install:
+  [ "$CXX" = "g++"] && export CXX=g++-5
+  [ "$CC" = "gcc"] && export CC=gcc-5
