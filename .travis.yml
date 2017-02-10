@@ -1,1 +1,2 @@
 script: make check
+compiler: clang
