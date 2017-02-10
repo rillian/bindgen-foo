@@ -11,6 +11,9 @@ class Thing {
     T operator*() {
       return value;
     }
+    T get() {
+      return value;
+    }
   private:
    T value;
    bool valid;
