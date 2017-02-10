@@ -1,7 +1,7 @@
 all: foo binding.rs
 
 foo: foo.cc foo.h
-	c++ -g -Wall -o $@ $<
+	$(CXX) -g -Wall -o $@ $<
 
 binding.rs: binding.hpp foo.h
 	bindgen $< > $@
