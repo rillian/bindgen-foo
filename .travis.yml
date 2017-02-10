@@ -1,2 +1,5 @@
-script: make check
+language: c++
+
 compiler: clang
+
+script: make check
