@@ -4,6 +4,8 @@ script: make check
 
 addons:
   apt:
+    sources:
+    - ubuntu-toolchain-r-test
     packages:
     - g++-5
     - gcc-5
